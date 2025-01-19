@@ -12,4 +12,5 @@ public interface ICommandeServices {
     List<Commande> getLastCommandes();
     Optional<Commande> recupererUneCommande(int id);
     void updateCommande(Commande commande);
+    void deleteCommande(int id);
 }

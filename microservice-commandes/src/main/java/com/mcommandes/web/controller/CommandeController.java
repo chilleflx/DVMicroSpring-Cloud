@@ -39,5 +39,10 @@ public class CommandeController {
     public void updateCommande(@RequestBody Commande commande) {
         commandeServiceImpl.updateCommande(commande);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteCommande(@PathVariable int id) {
+        commandeServiceImpl.deleteCommande(id);
+    }
 }
 

@@ -62,4 +62,9 @@ public class CommandeServiceImpl implements ICommandeServices {
     public void updateCommande(Commande commande) {
         commandesDao.save(commande);
     }
+
+    @Override
+    public void deleteCommande(int id) {
+        commandesDao.deleteById(id);
+    }
 }
