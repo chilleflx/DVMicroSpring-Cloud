@@ -14,20 +14,6 @@ ConfigMicro
 
 mcommandes
 
-Technologies
-
-Setup
-
-Prerequisites
-
-Running the Projects
-
-Configuration Management
-
-API Endpoints
-
-Health Monitoring
-
 Team
 
 License
@@ -121,10 +107,6 @@ Actuator Endpoints
 Configuration Management
 
 Health Check and Monitoring
-
-Team
-
-License
 
 # 🚀 Introduction
 Mcommandes is a Spring Boot-based microservice application designed to simulate payment processing and manage orders (Commandes). It provides a robust and scalable solution for handling CRUD operations on orders, dynamic configuration management, and health monitoring.
