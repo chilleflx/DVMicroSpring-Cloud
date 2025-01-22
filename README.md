@@ -1,3 +1,43 @@
+# 🚀 DVMicroSpring-Cloud
+This repository contains two Spring Boot microservices:
+
+ConfigMicro: A Spring Cloud Config Server for centralized configuration management.
+
+mcommandes: A microservice for managing orders (Commandes) with dynamic configuration and health monitoring.
+
+# 📚 Table of Contents
+Introduction
+
+Projects Overview
+
+ConfigMicro
+
+mcommandes
+
+Technologies
+
+Setup
+
+Prerequisites
+
+Running the Projects
+
+Configuration Management
+
+API Endpoints
+
+Health Monitoring
+
+Team
+
+License
+
+# 🚀 Introduction
+This repository demonstrates a microservices architecture using Spring Boot and Spring Cloud. It includes:
+
+ConfigMicro: A configuration server that fetches properties from a Git repository.
+
+mcommandes: A microservice for managing orders, which dynamically retrieves its configuration from ConfigMicro.
 # 🌐 ConfigMicroService
 
 # 📝 Description
