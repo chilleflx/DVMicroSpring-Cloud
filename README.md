@@ -119,6 +119,7 @@ Health Check Endpoint
 Access the health check endpoint at:
 http://localhost:8080/actuator/health
 or use the Swagger UI
+
 Custom Health Indicator
 The microservice is considered UP if there are orders in the COMMANDE table. Otherwise, it will return DOWN.
 
