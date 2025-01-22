@@ -1,3 +1,65 @@
+# 🌐 ConfigMicroService
+
+# 📝 Description
+This is a Spring Boot application that serves as a configuration server using Spring Cloud Config. It fetches configuration properties from a Git repository and provides centralized configuration management for microservices.
+
+# 🛠 Requirements
+Java 17 ☕
+
+Maven 🛠️
+
+Git 📂
+
+# 🚀 Getting Started
+1. Clone the Repository
+git clone https://github.com/chilleflx/configmicro.git
+cd configmicro
+
+2. Build the Project
+   mvn clean install
+3. Run the Application
+mvn spring-boot:run
+The application will start on port 9101 by default.
+
+# ⚙️ Configuration
+The application fetches configuration properties from the following Git repository:
+Application Properties
+The following properties are configured in application.properties:
+
+# Application Configuration
+spring.application.name=configmicro
+server.port=9101
+
+# Spring Cloud Config Server Configuration
+spring.cloud.config.server.git.uri=https://github.com/chilleflx/cloud-config.git
+spring.cloud.config.server.git.default-label=main
+
+# Logging Configuration
+logging.level.root=INFO
+logging.level.com.mcommerce.config.server=INFO
+logging.level.org.springframework.boot.web.embedded.tomcat=INFO
+
+Customizing Configuration
+To customize the configuration:
+
+1.Modify the application.properties file.
+
+2.Update the Git repository URI or other properties as needed.
+
+# 📦 Dependencies
+The project uses the following dependencies:
+
+Spring Boot Starter Thymeleaf 🍃
+
+Spring Boot Starter Web 🌐
+
+Spring Cloud Config Server ☁️
+
+WebJars Bootstrap 🎨
+
+Spring Boot Starter Test (for testing) 🧪
+
+
 # 📦 Mcommandes
 Microservices for simulating payments and managing orders.
 
