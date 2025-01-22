@@ -1,5 +1,4 @@
-
-#📦 Mcommandes
+# 📦 Mcommandes
 Microservices for simulating payments and managing orders.
 
 📚 Table of Contents
