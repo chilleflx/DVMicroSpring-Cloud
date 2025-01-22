@@ -1,7 +1,7 @@
 # 📦 Mcommandes
 Microservices for simulating payments and managing orders.
 
-📚 Table of Contents
+# 📚 Table of Contents
 Introduction
 
 Technologies
@@ -24,7 +24,7 @@ Team
 
 License
 
-🚀 Introduction
+# 🚀 Introduction
 Mcommandes is a Spring Boot-based microservice application designed to simulate payment processing and manage orders (Commandes). It provides a robust and scalable solution for handling CRUD operations on orders, dynamic configuration management, and health monitoring.
 
 Key Features:
@@ -37,7 +37,7 @@ Health Monitoring: Monitor the health of the microservice using Spring Boot Actu
 
 Swagger Integration: Interactive API documentation for easy testing and exploration.
 
-🛠 Technologies
+# 🛠 Technologies
 Java 1.8 🖥️
 
 Spring Boot 2.7.16 🌱
@@ -54,7 +54,7 @@ Maven 🛠️ (Build and dependency management)
 
 Spring Boot Actuator 🩺 (Health checks and monitoring)
 
-🛠 Setup
+# 🛠 Setup
 Prerequisites
 Java 1.8 or higher
 
@@ -72,7 +72,8 @@ mvn clean install
 mvn spring-boot:run
 4.Access the Application:
 http://localhost:9001
-🎯 Usage
+
+# 🎯 Usage
 Once the application is running, you can interact with the API using tools like Postman, cURL, or directly via Swagger UI.
 
 🔗 API Endpoints
@@ -84,11 +85,11 @@ GET	/commandes/{id}	Retrieve a specific order by ID.
 PUT	/commandes/update	Update an existing order.
 DELETE	/commandes/{id}	Delete an order by ID.
 
-📄 Swagger
+# 📄 Swagger
 Swagger UI is integrated into the application for easy API exploration and testing. Access it at:
 http://localhost:9001/swagger-ui/index.html
 
-⚙️ Actuator Endpoints
+# ⚙️ Actuator Endpoints
 Spring Boot Actuator provides several endpoints for monitoring and managing the application. Below are the key Actuator endpoints:
 
 HTTP Method	Endpoint	Description
@@ -96,7 +97,7 @@ POST	/actuator/refresh	Refresh the application configuration dynamically.
 GET	/actuator/health	Check the health status of the application (UP/DOWN).
 GET	/actuator/env/mes-config-ms.commandes-last	Retrieve the current value of the mes-config-ms.commandes-last property.
 
-⚙️ Configuration Management
+# ⚙️ Configuration Management
 The application uses Spring Cloud Config to manage configurations dynamically. The configuration is stored in a GitHub repository and can be updated without restarting the application.
 
 Key Configuration Properties
@@ -111,7 +112,7 @@ Refresh the configuration using the Actuator endpoint:
 curl -X POST http://localhost:9001/actuator/refresh
 or use the Swagger UI
 
-🩺 Health Check and Monitoring
+# 🩺 Health Check and Monitoring
 The application uses Spring Boot Actuator to monitor its health and status.
 
 Health Check Endpoint
@@ -121,10 +122,10 @@ or use the Swagger UI
 Custom Health Indicator
 The microservice is considered UP if there are orders in the COMMANDE table. Otherwise, it will return DOWN.
 
-👥 Team
+# 👥 Team
 Meet the team behind Mcommandes:
 DAKKA Ilyass
 Marouane Rachdi
 
-📜 License
+# 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
